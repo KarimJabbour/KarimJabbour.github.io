@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karim Jabbour</title>
+    <link
+      rel="stylesheet"
+      href="./styles/main.css"
+      type="text/css"
+      media="screen"
+    />
+    <script src="https://kit.fontawesome.com/02995bb42f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="container--header">
+      <input type="checkbox" id="color-toggle" class="checkbox"></input>
+      <label for="color-toggle" class="label">
+        <i class="fa fa-moon"></i>
+        <i class="fa fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+    <div id="container--main">
+      <section id="wrapper--hero" class="section--page">
+        <img id="profile-pic" src="./assets/images/profpic.jpg" />
+        <div>
+          <h1 id="user-name">Karim Jabbour</h1>
+          <p id="bio">Computer Science at McGill University</p>
+          <p id="email">📩 kareemjabbour@gmail.com</p>
+        </div>
+      </section>
+
+      <section class="section--page">
+        <div id="socials--list">
+          <a href="https://www.linkedin.com/in/karimjabbour97/" class="social-card" target="_blank">
+            LinkedIn
+            <img class="social-icon" src='./assets/images/linkdin.png'>
+          </a>
+          <a href="https://github.com/KarimJabbour" class="social-card" target="_blank">
+            GitHub
+            <img class="social-icon" src='./assets/images/github.png'>
+          </a>
+          <a href="https://twitter.com/karimjabbour97" class="social-card" target="_blank">
+            Twitter
+            <img class="social-icon" src='./assets/images/twitter.png'>
+          </a>
+          <a href="https://www.facebook.com/kareem.jabbour.5" class="social-card" target="_blank">
+            Facebook
+            <img class="social-icon" src='./assets/images/fb.png'>
+          </a>
+          <a href="./assets/resume.pdf" class="social-card" target="_blank">
+            Download Resume
+            <img class="social-icon" src='./assets/images/dnld.png'>
+          </a>
+        </div>
+      </section>
+
+      <section class="section--page">
+        <h2>Technical Skills</h2>
+        <!-- <ul>
+          <li>
+            Languages: Java, Python, React JS, JavaScript, Node JS, C, Bash,
+            GIT, NoSQL, HTML/CSS, Typescript, Assembly, AWK
+          </li>
+          <li>
+            Tools: AWS (EC2, S3, Lambda, Amplify, CloudWatch), MongoDB,
+            Unix/Linux, Express, NPM, GitHub, Postman, Docker
+          </li>
+        </ul> -->
+        <div class="skill-section">
+          <div class="skill-card">Python, Javascript, Java, C</div>
+          <div class="skill-card">React JS, Node JS, Express</div>
+          <div class="skill-card">HTML, CSS/SASS</div>
+          <div class="skill-card">MongoDB, MongoDB Atlas</div>
+          <div class="skill-card">Docker, Docker-compose</div>
+          <div class="skill-card">Unix/Linux, BASH, Assembly/MIPS , AWK</div>
+          <div class="skill-card">AWS Services: EC2, S3, Lambda, Cloudwatch, Amplify</div>
+          <div class="skill-card">GitHub, VS Code, Eclipse IDE, Postman, Jupyter Notebook, MARS IDE</div>
+        </div>
+
+      
+      </section>
+
+      <section class="section--page" >
+        <h2>Projects</h2>
+        <div class="section--projects">
+          <div class="project-card">
+            <img class="project-icon" src="./assets/images/ring.png">
+            <div class="project-card-content">
+              <h4>Ringtonify App</h4>
+              <p>Designed a ringtone maker using AWS services (Lambda, S3, Amplify) + React JS.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img class="project-icon" src="./assets/images/fortune.png">
+            <div class="project-card-content">
+              <h4>Daily Fortune App</h4>
+              <p>Designed a full-stack app (MERN) that sends daily fortune messages to clients through email. </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img class="project-icon" src="./assets/images/juke.svg">
+            <div class="project-card-content">
+              <h4>JukeBox App</h4>
+              <p>Built a Spotify-connected web app that allows multiple clients to search for and push songs to one hosting music player.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img class="project-icon" id="covid-icon" src="./assets/images/covid.png">
+            <div class="project-card-content">
+              <h4>COVID-19 Detector</h4>
+              <h5 style="line-height: 0;margin-bottom:0">Hackathon Winner</h5>
+              <p>Designed a CNN that classifies chest X-Rays as COVID-positive with an accuracy of around 90%.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section--page">
+        <h2>Work Experience</h2>
+        <table class="work">
+          <div class="work-item">
+            <tr class="work-header-row">
+              <th>Software Engineering Intern</th>
+              <th>Flare Systems, Montreal</th>
+              <th>Sep. 2021 - Dec. 2021</th>
+            </tr>
+            <tr class="work-content-row">
+              <td colspan="3">
+              <ul>
+                <li>Responsible for code base maintenance within Flare’s own application, Firework, including bug fixes and code re-writing.</li>
+                <li>Fixed UI issues such as wrong URLs, malfunctioning feeds, and broken buttons/links thus enhancing the user experience.</li>
+                <li>Added several UI features to Firework like copy/paste button functionality, query-based highlighting, and new data feeds.</li>
+                <li>Automated admin login by loading necessary usernames/passwords of disconnected sessions from the backend (using Vue JS), allowing for a quick login without the need for copying any credentials.</li>
+                <li>Designed and edited necessary tests for bug-fixes before running them through a GitLab CI/CD pipeline.</li>
+              </ul>
+            </td>
+            </tr>
+          </div>
+
+          <div class="work-item">
+            <tr class="work-header-row">
+              <th>R&D Intern: AI Crypto Project</th>
+              <th>AI Launch Lab, Montreal</th>
+              <th>Jun. 2021 – Aug. 2021</th>
+            </tr>
+            <tr class="work-content-row">
+              <td colspan="3">
+                <ul>
+                  <li>Processed the crypto-stock market dataset and extracted relevant financial indicators such as MACD, RSI, SMA, and EMA.</li>
+                  <li>Applied classification algorithms on the processed data to categorize stocks as bearish, bullish, or neutral.</li>
+                  <li>Compared the efficiencies of different AI models (ex: Regression, LSTMs, and KNNs) in predicting future stock prices.</li>
+                </ul>
+              </td>
+            </tr>
+          </div>
+
+          <div class="work-item">
+            <tr class="work-header-row">
+              <th>Virtual TechEd Intern</th>
+              <th>CEED Concordia, Montreal</th>
+              <th>Jan. 2021 – Apr. 2021</th>
+            </tr>
+            <tr class="work-content-row">
+              <td colspan="3">
+              <ul>
+                <li>Mentored a class of 30 middle-school students in Gulu, Uganda about the basics of computer use, Microsoft Office, and Python through online tech workshops and by writing them a visual handbook.</li>
+              </ul>
+            </td>
+            </tr>
+          </div>
+          <div class="work-item">
+            <tr class="work-header-row">
+              <th>Head of Publicity</th>
+              <th>Concordia Game Development Club, Montreal</th>
+              <th>Feb 2021 – Aug. 2021</th>
+            </tr>
+            <tr class="work-content-row">
+              <td colspan="3">
+              <ul>
+                <li>Managed all the social media platforms for the club and wrote 5 articles for the club magazine.</li>
+              </ul>
+            </td>
+            </tr>
+          </div>
+        </table>
+      </section>
+      <section class="section--page">
+        <h2>Education</h2>
+        <table class="education">
+          <div class="education-item" >
+            <tr class="education-header-row">
+              <th class="education-location">University of McGill</th>
+              <th class="education-year">Jan 2022 - May 2024</th>
+            </tr>
+            <tr class="education-content-row">
+              <td>BSc Computer Science</td>
+              <td>GPA: 3.57/4.0</td>
+              <td>Montreal, Canada</td>
+            </tr>
+          </div>
+          <div class="education-item">
+            <tr class="education-header-row">
+              <th class="education-location">University of Concordia</th>
+              <th class="education-year">Sep 2020 - Aug 2021</th>
+            </tr>
+            <tr class="education-content-row">
+              <td>BSc Computer Science</td>
+              <td>GPA: 4.12/4.3</td>
+              <td>Montreal, Canada</td>
+            </tr>
+          </div>
+          <div class="education-item">
+            <tr class="education-header-row">
+              <th class="education-location" >University of McGill</th>
+              <th class="education-year">Sep 2019 - May 2020</th>
+            </tr>
+            <tr class="education-content-row">
+              <td>Gr. Clinical Research Diploma</td>
+              <td>GPA: 3.97/4.0</td>
+              <td>Montreal, Canada</td>
+            </tr>
+          </div>
+          <div class="education-item">
+            <tr class="education-header-row">
+              <th class="education-location">University of Balamand</th>
+              <th class="education-year">Sep 2014 - June 2018</th>
+            </tr>
+            <tr class="education-content-row">
+              <td>BSc Biology</td>
+              <td>GPA: 3.76/4.0</td>
+              <td>Koura, Lebanon</td>
+            </tr>
+          </div>
+        </table>
+      </section>  
+    </div>
+    <script src="functions.js"></script>
+  </body>
+</html>
