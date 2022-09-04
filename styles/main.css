@@ -177,19 +177,14 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.2s;
   border-radius: 20px;
-  width: 300px;
-  height: 310px;
+  width: 230px;
+  height: 300px;
   background-color: white;
   margin-right: 1em;
   margin-bottom: 1em;
-  line-height: 0;
+  line-height: 0em;
+  /* font-size: 14px; */
 }
-/* body.dark {
-  box-shadow: 0 4px 8px 0 rgb(250, 250, 250);
-  transition: 0.2s;
-  border-radius: 5px;
-  width: 300px;
-} */
 
 .project-card:hover {
   box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
@@ -200,7 +195,7 @@ a {
 
 .project-card-content {
   padding: 2px 16px;
-  line-height: 0;
+  line-height: 0em;
   margin: 0em;
 }
 .project-card-content > h4 {
@@ -210,31 +205,72 @@ a {
   margin-bottom: 0em;
   padding: 0;
 }
+.project-card-content > p {
+  line-height: 1.2em;
+}
 .project-icon {
   width: inherit;
-  height: 170px;
+  height: 50%;
+  border-radius: 20px 20px 0 0;
+  background-color: rgb(250, 250, 250);
+}
+.applet-card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  border-radius: 20px;
+  width: 210px;
+  height: 250px;
+  background-color: white;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  font-size: 15px;
+}
+
+.applet-card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+.applet-card-dark:hover {
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255);
+}
+
+.applet-card-content {
+  padding: 2px 16px;
+  /* line-height: 0; */
+  margin: 0em;
+}
+.applet-card-content > h4 {
+  line-height: 0em;
+  color: rgb(65, 64, 64);
+  margin-top: 1em;
+  margin-bottom: 0em;
+  padding: 0;
+}
+.applet-card-content > p {
+  margin-top: 0.8em;
+  line-height: 1.2em;
+}
+.applet-icon {
+  width: inherit;
+  height: 54.8%;
   border-radius: 20px 20px 0 0;
   background-color: rgb(250, 250, 250);
 }
 #covid-icon {
-  /* width: 100%; */
   object-fit: contain;
 }
+
 .education {
-  /* display: flex; */
-  width: 100%;
-  justify-content: space-between;
+  display: table;
+  width: 65%;
 }
+
 .education-header-row {
-  justify-content: space-evenly;
+  text-align: left;
 }
-.education-location {
-  display: flex;
-  align-items: left;
+.education-content-row > td {
+  padding-bottom: 10px;
 }
 .education-year {
-  display: inline-block;
-  align-items: right;
-  align-self: right;
-  align-content: right;
+  text-align: end;
 }
