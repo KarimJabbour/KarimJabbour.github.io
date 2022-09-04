@@ -136,6 +136,10 @@ a {
   margin-bottom: 0.5em;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
+.skill-card:hover {
+  border: 1px solid #0da2b8;
+  border-style: groove;
+}
 .checkbox {
   position: absolute;
   opacity: 0%;
@@ -273,4 +277,27 @@ a {
 }
 .education-year {
   text-align: end;
+}
+.fa-info-circle {
+  color: rgb(183, 183, 183);
+  /* border: solid rgb(47, 47, 49); */
+}
+.fa-info-circle:hover {
+  border: solid rgb(54, 222, 255);
+  border-radius: 50%;
+  border-width: 1px;
+}
+.info-text {
+  font-size: 15px;
+  border-radius: 15px;
+  visibility: hidden;
+  /* border: solid black; */
+  background-color: rgb(35, 180, 203);
+  color: white;
+  padding: 7px;
+  align-items: center;
+}
+
+.info:hover .info-text {
+  visibility: visible;
 }
