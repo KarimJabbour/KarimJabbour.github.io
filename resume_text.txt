@@ -1,0 +1,60 @@
+                                                               Karim Jabbour                                Citizenship : Canadian
+    kareemjabbour@gmail.com                  438 229 8430                  linkedin.com/in/karimjabbour97       karim-jabbour.com
+ EDUCATION
+  McGill University                                                                                         Jan. 2022 – Dec. 2024
+  BSc. Computer Science                                   GPA: 3.56/4.0                                         Montreal, Canada
+EXPERIENCE
+  Software Developer (Full-time)                     Morgan Stanley, Montreal                           Feb. 2025 – Current Day
+     •   Built an options watch blotter from the ground up using AngularJS, enabling real-time monitoring and interaction.
+     •   Migrated multiple Angular projects and dependencies across repositories and contributed to shared UI libraries.
+  Technology Analyst Intern                          Morgan Stanley, Montreal                             May. 2024 – Aug. 2024
+     •   Speeding up Archy’s loading time through caching of the graph state in Mongo DB.
+     •   Improving Archy’s user experience by adding new node types in the graph such as databases and treadmill instances,
+         adding new edge types for connection states, and adding new filtering tools within the UI.
+         Tools: Python, Angular JS, Vis JS, Next JS, Jenkins, Git, Linux
+ Technology Analyst Intern                          Morgan Stanley, Montreal                           May. 2023 – Aug. 2023
+    •  Handling the container-based redeployment of VCON using Docker and leveraging Artifactory for image management.
+    •  Utilizing Kubernetes for autoscaling and load balancing to ensure optimal performance of the VCON service.
+    •  Developing Helm charts for streamlined deployment and version control, enhancing configuration management.
+         Tools: Docker, Kubernetes, Helm Charts, Artifactory, Jenkins, Git, Linux
+ Full-Stack Developer Intern                             Autodesk, Montreal                                  Jan. 2023 – Apr. 2023
+    •    Created front-end UI(s) for both the User Status Diagnostic Tool and Session Request Manager in the SHOTGRID Platform.
+    •    Wrote Jest unit tests and created Storybooks for all my React components, thus reaching 100% coverage on all code.
+    •    Modified the SHOTGRID Cross Site Service API calls, thus minimizing UI loading time by at least 3 seconds.
+         Tools: React JS, Jest, Jenkins, Storybook, Ruby on Rails, Webpack, Git
+ Software Engineering Intern                         Flare Systems, Montreal                              Sep. 2021 – Dec. 2021
+    •  Fixed UI issues such as wrong URLs, malfunctioning feeds, and broken buttons/links thus enhancing the user experience.
+    •  Added several UI features to Firework like copy/paste button functionality, query-based highlighting, and new data feeds
+    •  Automated admin login process using Vue.js, eliminating the need for manual credential copying.
+    •  Designed and edited necessary tests for bug-fixes before running them through a GitLab CI/CD pipeline.
+         Tools: Vue JS, JavaScript, CSS, GitLab, Postman, Linux, Sentry
+ Software Engineering Intern                          AI Launch Lab, Montreal                                 Jun. 2021 – Aug. 2021
+    •   Processed the crypto-stock market dataset and extracted relevant financial indicators such as MACD, RSI, SMA, and EMA.
+    •   Applied classification algorithms on the processed data to categorize stocks as bearish, bullish, or neutral.
+    •   Compared the efficiencies of different AI models (ex: Regression, LSTMs, and KNNs) in predicting future stock prices.
+ Research Assistant                              Prometheus Lab, McGill University                            Sep. 2022 – Dec. 2022
+    •   Built a proof of concept using TensorFlow.js and React JS for hand gesture-based accessibility on webpages.
+EXTRACURRICULARS
+ Development Lead                                      McGill Competitive Programming                         Sep. 2022 – Present
+    •  Build full stack webapps to provide members with learning materials and design projects for the club such as Tech Games.
+ Machine Learning Bootcamp                            McGill Artificial Intelligence Society                Jan. 2022 – Apr. 2022
+    •  Built a music genre classifier with 92% accuracy using a CNN, as part of an accelerated machine learning bootcamp.
+PROJECTS
+ PeerChat – iOS Peer-to-Peer Messaging App
+    •  Built a real-time offline chat app using Swift’s MultipeerConnectivity for local peer discovery and messaging.
+    •  Designed a modern SwiftUI front-end with support for text, image sharing, avatars, and persistent nicknames.
+    •  Integrated AVFoundation and PhotosUI for media handling and local storage with UserDefaults.
+         Tools: Swift, Swift UI, Multipeer Connectivity, AVFoundation, PhotosUI, UserDefaults
+ COVID-19 detection through Chest X-rays (McMed Hacks Hackathon Winner)
+   •   Designed a Convolutional Neural Network that classifies chest X-Rays as COVID-positive with an accuracy of around 90%.
+          Tools: Python/Google Collab, KERAS, Matplotlib, NumPy, Pandas, Seaborn
+ U-Glean App (1st Place Winner at Morgan Stanley “Code to Give” Hackathon: Earth Day Challenge)
+    •   Built a social media-style web app to organize gleaning events, connecting volunteers and hosts to reduce food waste.
+ Ringtonify Web App
+    •   Designed a ringtone maker using AWS services (Lambda, S3, Amplify) + React JS.
+    •   Automated ringtone clipping using AWS Lambda, S3, and webhooks for scalable audio processing.
+         Tools: AWS Lambda, AWS S3, AWS IAM, AWS Amplify, AWS CLI, AWS Cloud-watch, VS Code
+SKILLS
+    •    Languages: Java, Python, React JS, JavaScript, Node JS, C, SWIFT, GIT, NoSQL, HTML/CSS, Typescript, OCAML, Assembly
+    •    Tools: AWS (EC2, S3, Lambda, Amplify, CloudWatch), Unix/Linux, Docker, Kubernetes, Helm, MongoDB, Jest, Jenkins
+
