@@ -20,6 +20,11 @@
       </label>
     </div>
 
+    <button id="tetris-launch" aria-label="Launch Tetris">
+      <i class="fas fa-th-large"></i>
+      <span>Tetris</span>
+    </button>
+
     <!-- Side nav -->
     <nav id="side-nav" aria-label="Section navigation">
       <ul>
@@ -343,6 +348,35 @@
       </footer>
 
     </main>
+
+    <section id="tetris-overlay" aria-hidden="true">
+      <div class="tetris-shell">
+        <div class="tetris-top">
+          <h2>Tetris Mode</h2>
+          <button id="tetris-exit" aria-label="Exit Tetris">
+            <i class="fas fa-times"></i>
+            <span>Exit</span>
+          </button>
+        </div>
+        <div class="tetris-stage">
+          <canvas id="tetris-canvas" width="300" height="600" aria-label="Tetris Game"></canvas>
+          <aside class="tetris-panel">
+            <p><strong>Score:</strong> <span id="tetris-score">0</span></p>
+            <p><strong>Lines:</strong> <span id="tetris-lines">0</span></p>
+            <p><strong>Level:</strong> <span id="tetris-level">1</span></p>
+            <p class="tetris-help">Controls: ← → move, ↑ rotate, ↓ soft drop, Space hard drop, P pause.</p>
+            <div class="tetris-touch-controls" aria-label="Touch controls for Tetris">
+              <button type="button" class="tetris-touch-btn" data-action="left">◀</button>
+              <button type="button" class="tetris-touch-btn" data-action="right">▶</button>
+              <button type="button" class="tetris-touch-btn" data-action="rotate">⟳</button>
+              <button type="button" class="tetris-touch-btn" data-action="down">▼</button>
+              <button type="button" class="tetris-touch-btn" data-action="drop">⤓</button>
+              <button type="button" class="tetris-touch-btn" data-action="pause">⏯</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
     <script src="functions.js"></script>
   </body>

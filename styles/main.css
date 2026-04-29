@@ -75,12 +75,122 @@ body::before {
 
 a { text-decoration: none; color: inherit; transition: color 0.2s ease; }
 
+#tetris-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: radial-gradient(circle at top, #1f2937, #020617 65%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+#tetris-overlay.active {
+  display: flex;
+}
+.tetris-shell {
+  width: min(900px, 100%);
+  color: #f8fafc;
+}
+.tetris-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.tetris-top h2 {
+  margin: 0;
+  color: #f8fafc;
+}
+#tetris-exit {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(15, 23, 42, 0.45);
+  color: #f8fafc;
+  border-radius: 10px;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.tetris-stage {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+#tetris-canvas {
+  width: min(300px, 70vw);
+  height: auto;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  background: #0b1220;
+}
+.tetris-panel {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 1rem;
+  min-width: 220px;
+}
+.tetris-panel p {
+  margin-bottom: 0.5rem;
+  color: #dbeafe;
+}
+.tetris-help {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #bfdbfe;
+}
+.tetris-touch-controls {
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+.tetris-touch-btn {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(30, 41, 59, 0.7);
+  color: #e2e8f0;
+  border-radius: 8px;
+  min-height: 38px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.tetris-touch-btn:active {
+  transform: translateY(1px);
+  background: rgba(51, 65, 85, 0.9);
+}
+
 /* Theme toggle switch */
 #theme-toggle-wrap {
   position: fixed;
   top: 1.5rem;
   right: 1.75rem;
   z-index: 200;
+}
+#tetris-launch {
+  position: fixed;
+  top: 1.5rem;
+  right: 6rem;
+  z-index: 200;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--border-soft);
+  background: var(--card-bg);
+  color: var(--text-main);
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+#tetris-launch:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-color);
 }
 .theme-checkbox {
   position: absolute;
@@ -646,5 +756,19 @@ footer {
   .work-header-row .company-name { grid-column: 1; grid-row: auto; }
   .year-span { justify-self: start; }
   h2 { font-size: 1.2rem; }
-  #theme-toggle { top: 1rem; right: 1rem; }
+  #theme-toggle-wrap { top: 1rem; right: 1rem; }
+  #tetris-launch {
+    top: 1rem;
+    right: 5.7rem;
+    padding: 0.4rem 0.65rem;
+  }
+  #tetris-launch span { display: none; }
+  .tetris-stage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tetris-panel {
+    width: min(300px, 70vw);
+    min-width: 0;
+  }
 }
