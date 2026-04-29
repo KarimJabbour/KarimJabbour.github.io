@@ -10,244 +10,340 @@
   </head>
   <body>
 
-    <!-- Dark Mode Toggle -->
-    <div id="container--header">
-      <input type="checkbox" id="color-toggle" class="checkbox">
-      <label for="color-toggle" class="label">
-        <i class="fa fa-moon"></i>
-        <i class="fa fa-sun"></i>
-        <div class="ball"></div>
+    <!-- Theme toggle -->
+    <div id="theme-toggle-wrap">
+      <input type="checkbox" id="theme-toggle" class="theme-checkbox" aria-label="Toggle dark mode">
+      <label for="theme-toggle" class="theme-label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <span class="theme-ball"></span>
       </label>
     </div>
 
-    <div id="container--main">
-      
-      <!-- Hero Section -->
-      <section id="wrapper--hero" class="card reveal-on-scroll">
-        <img id="profile-pic" src="./assets/images/profpic.jpg" alt="Karim Jabbour" />
-        <div>
-          <h1 id="user-name">Karim Jabbour</h1>
-          <p id="bio">Computer Science at McGill University | Morgan Stanley</p>
-          <div id="socials--list">
-            <a href="https://www.linkedin.com/in/karimjabbour97/" class="social-card" target="_blank">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/KarimJabbour" class="social-card" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="./assets/resume.pdf" class="social-card" target="_blank" style="background-color: var(--text-main); color: var(--bg-color);">
-              <i class="fas fa-download"></i> Resume
-            </a>
-            <a href="mailto:kareemjabbour@gmail.com" class="social-card" target="_blank">
+    <!-- Side nav -->
+    <nav id="side-nav" aria-label="Section navigation">
+      <ul>
+        <li><a href="#hero" class="nav-link"><span class="nav-dot"></span><span class="nav-label">Intro</span></a></li>
+        <li><a href="#education" class="nav-link"><span class="nav-dot"></span><span class="nav-label">Education</span></a></li>
+        <li><a href="#experience" class="nav-link"><span class="nav-dot"></span><span class="nav-label">Experience</span></a></li>
+        <li><a href="#skills" class="nav-link"><span class="nav-dot"></span><span class="nav-label">Skills</span></a></li>
+        <li><a href="#projects" class="nav-link"><span class="nav-dot"></span><span class="nav-label">Projects</span></a></li>
+        <li><a href="#applets" class="nav-link"><span class="nav-dot"></span><span class="nav-label">Applets</span></a></li>
+        <li><a href="#extras" class="nav-link"><span class="nav-dot"></span><span class="nav-label">Extras</span></a></li>
+      </ul>
+    </nav>
+
+    <main id="container--main">
+
+      <!-- Hero -->
+      <section id="hero" class="card hero-card reveal-on-scroll">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <img id="profile-pic" src="./assets/images/profpic.jpg" alt="Karim Jabbour" />
+          <div class="hero-text">
+            <div class="hero-status">
+              <span class="status-dot"></span>
+              <img class="company-logo" src="./assets/images/logos/morganstanley.png" alt="" onerror="this.style.display='none'">
+              <span>Software Developer @ Morgan Stanley</span>
+            </div>
+            <h1 id="user-name">Karim Jabbour</h1>
+            <p id="bio">Computer Science · McGill University · Montreal</p>
+            <div id="socials--list">
+              <a href="https://www.linkedin.com/in/karimjabbour97/" class="social-card" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/KarimJabbour" class="social-card" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="./assets/resume.pdf" class="social-card primary" target="_blank" rel="noopener">
+                <i class="fas fa-download"></i> Resume
+              </a>
+              <a href="mailto:kareemjabbour@gmail.com" class="social-card">
                 <i class="fas fa-envelope"></i> Email
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Work Experience -->
-      <section class="card reveal-on-scroll">
-        <h2>Work Experience</h2>
-        
-        <div class="work-item">
-            <div class="work-header-row">
-                <span class="role-title">Software Developer (Full-time)</span>
-                <span class="company-name">Morgan Stanley, Montreal</span>
-                <span class="year-span">Feb. 2025 - Present</span>
-            </div>
-            <ul>
+      <!-- Education -->
+      <section id="education" class="card reveal-on-scroll">
+        <h2><span class="section-num">01</span><span class="section-title">Education</span></h2>
+
+        <div class="education-item">
+          <div class="work-header-row">
+            <span class="role-title"><img class="company-logo" src="./assets/images/logos/mcgill.png" alt="" onerror="this.style.display='none'">McGill University</span>
+            <span class="company-name">Montreal, Canada</span>
+            <span class="year-span">Jan 2025 — Present</span>
+          </div>
+          <p><strong>MSc Computer Science (Non-Thesis)</strong> · GPA 3.7 / 4.0</p>
+        </div>
+
+        <div class="education-item">
+          <div class="work-header-row">
+            <span class="role-title"><img class="company-logo" src="./assets/images/logos/mcgill.png" alt="" onerror="this.style.display='none'">McGill University</span>
+            <span class="company-name">Montreal, Canada</span>
+            <span class="year-span">Jan 2022 — Dec 2024</span>
+          </div>
+          <p><strong>BSc Computer Science</strong> · GPA 3.56 / 4.0</p>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="card reveal-on-scroll">
+        <h2><span class="section-num">02</span><span class="section-title">Experience</span></h2>
+        <div class="timeline">
+
+          <div class="timeline-item current">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="work-header-row">
+                <span class="role-title">Software Developer</span>
+                <span class="company-name"><img class="company-logo" src="./assets/images/logos/morganstanley.png" alt="" onerror="this.style.display='none'">Morgan Stanley · Montreal</span>
+                <span class="year-span">Feb 2025 — Present</span>
+              </div>
+              <ul>
                 <li>Built an options watch blotter from the ground up using AngularJS, enabling real-time monitoring and interaction.</li>
                 <li>Migrated multiple Angular projects and dependencies across repositories and contributed to shared UI libraries.</li>
-            </ul>
-        </div>
-
-        <div class="work-item">
-            <div class="work-header-row">
-                <span class="role-title">Technology Analyst Intern</span>
-                <span class="company-name">Morgan Stanley, Montreal</span>
-                <span class="year-span">May 2024 - Aug. 2024</span>
+              </ul>
             </div>
-            <ul>
-                <li>Sped up Archy’s loading time through caching of the graph state in Mongo DB.</li>
-                <li>Improved Archy’s user experience by adding new node types (databases, treadmill instances), new edge types, and filtering tools.</li>
-            </ul>
-        </div>
+          </div>
 
-        <div class="work-item">
-            <div class="work-header-row">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="work-header-row">
                 <span class="role-title">Technology Analyst Intern</span>
-                <span class="company-name">Morgan Stanley, Montreal</span>
-                <span class="year-span">May 2023 - Aug. 2023</span>
+                <span class="company-name"><img class="company-logo" src="./assets/images/logos/morganstanley.png" alt="" onerror="this.style.display='none'">Morgan Stanley · Montreal</span>
+                <span class="year-span">May 2024 — Aug 2024</span>
+              </div>
+              <ul>
+                <li>Sped up Archy's loading time through caching of the graph state in MongoDB.</li>
+                <li>Improved Archy's UX by adding new node types (databases, treadmill instances), new edge types, and filtering tools.</li>
+              </ul>
             </div>
-            <ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="work-header-row">
+                <span class="role-title">Technology Analyst Intern</span>
+                <span class="company-name"><img class="company-logo" src="./assets/images/logos/morganstanley.png" alt="" onerror="this.style.display='none'">Morgan Stanley · Montreal</span>
+                <span class="year-span">May 2023 — Aug 2023</span>
+              </div>
+              <ul>
                 <li>Handled container-based redeployment of VCON using Docker and Artifactory for image management.</li>
                 <li>Utilized Kubernetes for autoscaling and load balancing to ensure optimal performance.</li>
                 <li>Developed Helm charts for streamlined deployment and configuration management.</li>
-            </ul>
-        </div>
-
-        <div class="work-item">
-            <div class="work-header-row">
-                <span class="role-title">Full-Stack Developer Intern</span>
-                <span class="company-name">Autodesk, Montreal</span>
-                <span class="year-span">Jan. 2023 - Apr. 2023</span>
+              </ul>
             </div>
-            <ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="work-header-row">
+                <span class="role-title">Full-Stack Developer Intern</span>
+                <span class="company-name"><img class="company-logo" src="./assets/images/logos/autodesk.png" alt="" onerror="this.style.display='none'">Autodesk · Montreal</span>
+                <span class="year-span">Jan 2023 — Apr 2023</span>
+              </div>
+              <ul>
                 <li>Created front-end UIs for User Status Diagnostic Tool and Session Request Manager in SHOTGRID.</li>
                 <li>Wrote Jest unit tests and created Storybooks for React components, achieving 100% code coverage.</li>
                 <li>Optimized SHOTGRID Cross Site Service API calls, minimizing UI loading time by at least 3 seconds.</li>
-            </ul>
-        </div>
+              </ul>
+            </div>
+          </div>
 
-        <div class="work-item">
-            <div class="work-header-row">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="work-header-row">
                 <span class="role-title">Software Engineering Intern</span>
-                <span class="company-name">Flare Systems, Montreal</span>
-                <span class="year-span">Sep. 2021 - Dec. 2021</span>
-            </div>
-            <ul>
-                <li>Responsible for code base maintenance within Flare’s own application, Firework, including bug fixes and code re-writing.</li>
+                <span class="company-name"><img class="company-logo" src="./assets/images/logos/flare.png" alt="" onerror="this.style.display='none'">Flare Systems · Montreal</span>
+                <span class="year-span">Sep 2021 — Dec 2021</span>
+              </div>
+              <ul>
+                <li>Maintained Flare's own application, Firework, including bug fixes and code re-writing.</li>
                 <li>Fixed UI issues such as wrong URLs, malfunctioning feeds, and broken buttons/links.</li>
-                <li>Added several UI features like copy/paste button functionality, query-based highlighting, and new data feeds.</li>
+                <li>Added UI features like copy/paste button functionality, query-based highlighting, and new data feeds.</li>
                 <li>Automated admin login by loading disconnected sessions from the backend (Vue JS).</li>
-            </ul>
-        </div>
+              </ul>
+            </div>
+          </div>
 
-      </section>
-
-      <!-- Skills Section -->
-      <section class="card reveal-on-scroll">
-        <h2>Technical Skills</h2>
-        <div class="skill-section">
-          <div class="skill-card">Java</div>
-          <div class="skill-card">Python</div>
-          <div class="skill-card">React JS</div>
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">Node JS</div>
-          <div class="skill-card">HTML/CSS</div>
-          <div class="skill-card">TypeScript</div>
-          <div class="skill-card">AWS (EC2, S3, Lambda)</div>
-          <div class="skill-card">Docker</div>
-          <div class="skill-card">Kubernetes</div>
-          <div class="skill-card">Jenkins</div>
-          <div class="skill-card">GitLab CI/CD</div>
-          <div class="skill-card">Jest</div>
-          <div class="skill-card">Next JS</div>
-          <div class="skill-card">MongoDB</div>
-          <div class="skill-card">Linux</div>
         </div>
       </section>
 
-      <!-- Projects Section -->
-      <section class="card reveal-on-scroll">
-        <h2>Projects</h2>
+      <!-- Skills -->
+      <section id="skills" class="card reveal-on-scroll">
+        <h2><span class="section-num">03</span><span class="section-title">Technical Skills</span></h2>
+
+        <div class="skill-group">
+          <h3 class="skill-category">Languages</h3>
+          <div class="skill-section">
+            <div class="skill-card">Java</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">TypeScript</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-category">Frontend</h3>
+          <div class="skill-section">
+            <div class="skill-card">React JS</div>
+            <div class="skill-card">Next JS</div>
+            <div class="skill-card">HTML / CSS</div>
+            <div class="skill-card">Jest</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-category">Backend</h3>
+          <div class="skill-section">
+            <div class="skill-card">Node JS</div>
+            <div class="skill-card">MongoDB</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-category">Infra & Tools</h3>
+          <div class="skill-section">
+            <div class="skill-card">AWS (EC2, S3, Lambda)</div>
+            <div class="skill-card">Docker</div>
+            <div class="skill-card">Kubernetes</div>
+            <div class="skill-card">Jenkins</div>
+            <div class="skill-card">GitLab CI/CD</div>
+            <div class="skill-card">Linux</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="card reveal-on-scroll">
+        <h2><span class="section-num">04</span><span class="section-title">Projects</span></h2>
         <div class="section--projects">
-          
+
           <div class="project-card">
-            <img class="project-icon" src="./assets/images/ring.png" alt="Ringtonify">
+            <div class="project-cover cover-1">
+              <img class="project-icon" src="./assets/images/ring.png" alt="Ringtonify">
+            </div>
             <div class="project-card-content">
-              <h4>Ringtonify App</h4>
-              <p>Designed a ringtone maker using AWS services (Lambda, S3, Amplify) + React JS.</p>
+              <h4>Ringtonify</h4>
+              <p>Ringtone maker built on AWS (Lambda, S3, Amplify) with a React front-end.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Lambda</span>
+                <span class="tag">S3</span>
+                <span class="tag">Amplify</span>
+              </div>
             </div>
           </div>
 
           <div class="project-card">
-            <img class="project-icon" src="./assets/images/fortune.png" alt="Fortune">
+            <div class="project-cover cover-2">
+              <img class="project-icon" src="./assets/images/fortune.png" alt="Daily Fortune">
+            </div>
             <div class="project-card-content">
-              <h4>Daily Fortune App</h4>
-              <p>Full-stack app (MERN) that sends daily fortune messages to clients through email.</p>
+              <h4>Daily Fortune</h4>
+              <p>Full-stack MERN app that emails fortune messages to subscribers daily.</p>
+              <div class="project-tags">
+                <span class="tag">MongoDB</span>
+                <span class="tag">Express</span>
+                <span class="tag">React</span>
+                <span class="tag">Node</span>
+              </div>
             </div>
           </div>
 
           <div class="project-card">
-            <img class="project-icon" src="./assets/images/juke.svg" alt="JukeBox">
+            <div class="project-cover cover-3">
+              <img class="project-icon" src="./assets/images/juke.svg" alt="JukeBox">
+            </div>
             <div class="project-card-content">
-              <h4>JukeBox App</h4>
-              <p>Spotify-connected web app allowing multiple clients to search and push songs to one host.</p>
+              <h4>JukeBox</h4>
+              <p>Spotify-connected web app where multiple clients queue songs to one host.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Spotify API</span>
+                <span class="tag">Node</span>
+              </div>
             </div>
           </div>
 
           <div class="project-card">
-            <img class="project-icon" id="covid-icon" src="./assets/images/covid.png" alt="COVID">
+            <div class="project-cover cover-4">
+              <img class="project-icon" src="./assets/images/covid.png" alt="COVID-19 Detector">
+            </div>
             <div class="project-card-content">
-              <h4>COVID-19 Detector</h4>
-              <p><strong>Hackathon Winner:</strong> CNN that classifies chest X-Rays as COVID-positive (~90% accuracy).</p>
+              <h4>COVID-19 Detector <span class="badge">Hackathon Winner</span></h4>
+              <p>CNN that classifies chest X-rays as COVID-positive at ~90% accuracy.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">CNN</span>
+              </div>
             </div>
           </div>
 
         </div>
       </section>
 
-      <!-- Applets Section -->
-      <section class="card reveal-on-scroll">
-        <h2>Applets / Interactive</h2>
+      <!-- Applets -->
+      <section id="applets" class="card reveal-on-scroll">
+        <h2><span class="section-num">05</span><span class="section-title">Applets</span></h2>
         <div class="section--projects">
-            <div class="applet-card" onclick="window.open('./applets/Proj1_T2S/index.html','mywindow');">
-                <img class="applet-icon" src="./assets/images/t2s.png" alt="T2S">
-                <div class="applet-card-content">
-                  <h4>Text To Speech</h4>
-                  <p>Simple app based around the JS built in synth module to speak any input text.</p>
-                </div>
+          <div class="applet-card" onclick="window.open('./applets/Proj1_T2S/index.html','mywindow');">
+            <div class="project-cover cover-5">
+              <img class="applet-icon" src="./assets/images/t2s.png" alt="Text to Speech">
             </div>
+            <div class="applet-card-content">
+              <h4>Text to Speech</h4>
+              <p>Tiny app built around the JS Speech Synthesis API to read any input text aloud.</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Web Speech API</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- Extras -->
+      <section id="extras" class="card reveal-on-scroll">
+        <h2><span class="section-num">06</span><span class="section-title">Extracurriculars</span></h2>
 
-
-      <!-- Education -->
-      <section class="card reveal-on-scroll">
-        <h2>Education</h2>
-        
         <div class="education-item">
-            <div class="education-header-row">
-                <span class="role-title">McGill University</span>
-                <span class="company-name">Montreal, Canada</span>
-                <span class="year-span">Jan 2025 - Present</span>
-            </div>
-            <p><strong>MSc Computer Science (Non-Thesis)</strong> | GPA: 3.7/4.0</p>
+          <div class="work-header-row">
+            <span class="role-title">Development Lead</span>
+            <span class="company-name"><img class="company-logo" src="./assets/images/logos/mcgill.png" alt="" onerror="this.style.display='none'">McGill Competitive Programming</span>
+            <span class="year-span">Sep 2022 — Dec 2022</span>
+          </div>
+          <ul>
+            <li>Built full-stack webapps to provide members with learning materials and designed projects for the club such as Tech Games.</li>
+          </ul>
         </div>
 
         <div class="education-item">
-            <div class="education-header-row">
-                <span class="role-title">McGill University</span>
-                <span class="company-name">Montreal, Canada</span>
-                <span class="year-span">Jan 2022 - Dec 2024</span>
-            </div>
-            <p><strong>BSc Computer Science</strong> | GPA: 3.56/4.0</p>
+          <div class="work-header-row">
+            <span class="role-title">Machine Learning Bootcamp</span>
+            <span class="company-name"><img class="company-logo" src="./assets/images/logos/mcgill.png" alt="" onerror="this.style.display='none'">McGill Artificial Intelligence Society</span>
+            <span class="year-span">Jan 2022 — Apr 2022</span>
+          </div>
+          <ul>
+            <li>Built a music genre classifier with 92% accuracy using a CNN, as part of an accelerated machine learning bootcamp.</li>
+          </ul>
         </div>
-
       </section>
 
-      <!-- Extracurriculars -->
-      <section class="card reveal-on-scroll">
-        <h2>Extracurriculars</h2>
-        
-        <div class="education-item">
-            <div class="education-header-row">
-                <span class="role-title">Development Lead</span>
-                <span class="company-name">McGill Competitive Programming</span>
-                <span class="year-span">Sep. 2022 – Dec. 2022</span>
-            </div>
-            <ul>
-                <li>Build full stack webapps to provide members with learning materials and design projects for the club such as Tech Games.</li>
-            </ul>
-        </div>
+      <footer>
+        <p>© <span id="footer-year"></span> Karim Jabbour · Built with HTML, CSS &amp; a bit of JS</p>
+      </footer>
 
-        <div class="education-item">
-            <div class="education-header-row">
-                <span class="role-title">Machine Learning Bootcamp</span>
-                <span class="company-name">McGill Artificial Intelligence Society</span>
-                <span class="year-span">Jan. 2022 – Apr. 2022</span>
-            </div>
-            <ul>
-                <li>Built a music genre classifier with 92% accuracy using a CNN, as part of an accelerated machine learning bootcamp.</li>
-            </ul>
-        </div>
+    </main>
 
-      </section>
-
-    </div>
-    
     <script src="functions.js"></script>
   </body>
 </html>
