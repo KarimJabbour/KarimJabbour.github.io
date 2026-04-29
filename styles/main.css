@@ -19,6 +19,7 @@
   --noise-opacity: 0.025;
 }
 
+:root.dark-mode,
 body.dark-mode {
   --bg-color: #0a0d14;
   --bg-elevated: #14181f;
@@ -42,7 +43,12 @@ body.dark-mode .project-cover {
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
